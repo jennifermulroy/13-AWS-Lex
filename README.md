@@ -11,22 +11,40 @@ In this homework assignment, a Robo Advisor was created using Amazon Web Service
 
 4. [Enhance the Robo Advisor with an Amazon Lambda Function](Enhance-the-Robo-Advisor-with-an-Amazon-Lambda-Function)
 
+5. [Robo Advisor in Action!](Robo-Advisor-in-Action!)
+
 
 ### Initial Robo Advisor Configuration
 
-  Define an Amazon Lex bot with a single intent that establishes a conversation about the requirements to suggest an investment portfolio for retirement.
+  An [Amazon Lex Bot](https://us-west-2.console.aws.amazon.com/lex/home?region=us-west-2) was created with a single intent named RecommendPortfolio to establish a conversation about the requirement inputs needed to suggest an asset allocation mix. 
+  
+  A few sample utterances and slots were established
+  
+  ![utterances](Images/utterances.png)        ![slots](Images/slots.png)
+
   
 ### Build and Test the Robo Advisor
 
-  Make sure that your bot is working and responding accurately along with the conversation with the user, by building and testing it.
+The Robo Advisor was built and tested to ensure it is responding accurately with the user. 
+
+![Test Video](Images/test.gif)
+
   
 ### Deploy the Robo Advisor on Slack: 
  
-  Publish the bot and create a Robo Advisor Slack app.
+  The bot was published and deployed as a Robo Advisor Slack app. 
+  
+  ![publish](Images/publish.png)
+  
+  ![slack](Images/slack.png}
  
 ###  Enhance the Robo Advisor with an Amazon Lambda Function
 
   Create an Amazon Lambda function that validates the user's input and returns the investment portfolio recommendation. This task includes testing the Amazon Lambda function and making the integration with the bot.
   Deploy the Robo Advisor Powered by Amazon Lambda: Publish a new version of your bot that includes the new Amazon Lambda function, also test the new version of your bot on Slack.
+  
+  ![lambda](Images/lambda.png)
+  
+  ### Robo Advisor in Action! 
 
 ![Video](Images/Media1.gif)
