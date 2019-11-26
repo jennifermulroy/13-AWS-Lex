@@ -18,7 +18,7 @@ In this homework assignment, a Robo Advisor was created using Amazon Web Service
 
   An [Amazon Lex Bot](https://us-west-2.console.aws.amazon.com/lex/home?region=us-west-2) was created with a single intent named RecommendPortfolio to establish a conversation about the requirement inputs needed to suggest an asset allocation mix. 
   
-  The utterances and slots were established, and one customized slot called 'riskLevel' that provide risk options as buttons for the user to select. 
+  The utterances and slots were established, and one customized slot called `riskLevel` that will prompt with risk options as buttons for the user to select. 
   
   ![utterances](Images/utterances.png)        ![slots](Images/slots.png)
 
