@@ -1,2 +1,2 @@
 # 13-AWS-Lex
-![Video](Images/Media1.mp4)
+![Video](Images/Media1.gif)
