@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0",
+    "importType": "LEX",
+    "importFormat": "JSON"
+  },
+  "resource": {
+    "name": "RecommendPortfolio",
+    "version": "22",
+    "fulfillmentActivity": {
+      "codeHook": {
+        "uri": "arn:aws:lambda:us-west-2:233492323083:function:recommendPortfolio",
+        "messageVersion": "1.0"
+      },
+      "type": "CodeHook"
+    },
+    "sampleUtterances": [
+      "I want to save money for my retirement",
+      "I'm {age} and I would like to invest for my retirement",
+      "I'm {age} and I want to invest for my retirement",
+      "I want the best option to invest for my retirement",
+      "I'm worried about my retirement",
+      "I want to invest for my retirement",
+      "I would like to invest for my retirement"
+    ],
+    "slots": [
+      {
+        "sampleUtterances": [],
+        "slotType": "AMAZON.NUMBER",
+        "slotConstraint": "Required",
+        "valueElicitationPrompt": {
+          "messages": [
+            {
+              "contentType": "PlainText",
+              "content": "Would you please provide your age?"
+            }
+          ],
+          "maxAttempts": 2
+        },
+        "priority": 2,
+        "name": "age"
+      },
+      {
+        "sampleUtterances": [],
+        "slotType": "AMAZON.US_FIRST_NAME",
+        "slotConstraint": "Required",
+        "valueElicitationPrompt": {
+          "messages": [
+            {
+              "contentType": "PlainText",
+              "content": "Thank you for trusting on me to help, could you please give me your first name?"
+            }
+          ],
+          "maxAttempts": 2
+        },
+        "priority": 1,
+        "name": "firstName"
+      },
+      {
+        "sampleUtterances": [],
+        "slotType": "AMAZON.NUMBER",
+        "slotConstraint": "Required",
+        "valueElicitationPrompt": {
+          "messages": [
+            {
+              "contentType": "PlainText",
+              "content": "How much money would you like to invest?"
+            }
+          ],
+          "maxAttempts": 2
+        },
+        "priority": 4,
+        "name": "investmentAmount"
+      },
+      {
+        "sampleUtterances": [],
+        "slotType": "riskLevel",
+        "slotTypeVersion": "1",
+        "slotConstraint": "Required",
+        "valueElicitationPrompt": {
+          "messages": [
+            {
+              "contentType": "PlainText",
+              "content": "Please select your risk level below:"
+            },
+            {
+              "contentType": "PlainText",
+              "content": "What level of investment risk would you like to take?"
+            }
+          ],
+          "responseCard": "{\"version\":1,\"contentType\":\"application/vnd.amazonaws.card.generic\",\"genericAttachments\":[{\"imageUrl\":\"https://i1.wp.com/bioposture.com/wp-content/uploads/2017/04/icon-no-risk.png?ssl=1\",\"subTitle\":\"No risk at all\",\"title\":\"None\",\"buttons\":[{\"text\":\"None\",\"value\":\"None\"}]},{\"imageUrl\":\"https://www.quostar.com/wp-content/uploads/2017/01/risk-meter.png\",\"subTitle\":\"Just a bit of risk\",\"title\":\"Very Low or Low\",\"buttons\":[{\"text\":\"Low\",\"value\":\"Low\"},{\"text\":\"Very Low\",\"value\":\"Very Low\"}]},{\"imageUrl\":\"https://www.pmoadvisory.com/wp-content/uploads/2018/07/value-add-risk-icon.png\",\"subTitle\":\"Let's start getting wild\",\"title\":\"Medium\",\"buttons\":[{\"text\":\"Medium\",\"value\":\"Medium\"}]},{\"imageUrl\":\"http://www.pngmart.com/files/7/Risk-PNG-Transparent.png\",\"subTitle\":\"I have no fear!\",\"title\":\"High or Very High\",\"buttons\":[{\"text\":\"High\",\"value\":\"High\"},{\"text\":\"Very High\",\"value\":\"Very High\"}]}]}",
+          "maxAttempts": 2
+        },
+        "priority": 5,
+        "name": "riskLevel"
+      }
+    ],
+    "dialogCodeHook": {
+      "uri": "arn:aws:lambda:us-west-2:233492323083:function:recommendPortfolio",
+      "messageVersion": "1.0"
+    },
+    "slotTypes": [
+      {
+        "name": "riskLevel",
+        "version": "1",
+        "enumerationValues": [
+          {
+            "value": "High"
+          },
+          {
+            "value": "Very Low"
+          },
+          {
+            "value": "Low"
+          },
+          {
+            "value": "Medium"
+          },
+          {
+            "value": "Very High"
+          },
+          {
+            "value": "None"
+          }
+        ],
+        "valueSelectionStrategy": "ORIGINAL_VALUE"
+      }
+    ]
+  }
+}
