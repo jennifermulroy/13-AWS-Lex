@@ -18,14 +18,14 @@ In this homework assignment, a Robo Advisor was created using Amazon Web Service
 
   An [Amazon Lex Bot](https://us-west-2.console.aws.amazon.com/lex/home?region=us-west-2) was created with a single intent named RecommendPortfolio to establish a conversation about the requirement inputs needed to suggest an asset allocation mix. 
   
-  A few sample utterances and slots were established
+  The utterances and slots were established:
   
   ![utterances](Images/utterances.png)        ![slots](Images/slots.png)
 
   
 ### Build and Test the Robo Advisor
 
-The Robo Advisor was built and tested to ensure it is responding accurately with the user. 
+The Robo Advisor was built and tested in AWS to ensure it is responding accurately with the user. 
 
 ![Test Video](Images/test.gif)
 
@@ -36,15 +36,15 @@ The Robo Advisor was built and tested to ensure it is responding accurately with
   
   ![publish](Images/publish.png)
   
-  ![slack](Images/slack.png}
+  ![slack](Images/slack.png)
  
 ###  Enhance the Robo Advisor with an Amazon Lambda Function
 
-  Create an Amazon Lambda function that validates the user's input and returns the investment portfolio recommendation. This task includes testing the Amazon Lambda function and making the integration with the bot.
-  Deploy the Robo Advisor Powered by Amazon Lambda: Publish a new version of your bot that includes the new Amazon Lambda function, also test the new version of your bot on Slack.
+AWS Lambda is a service that runs and executes customized code. A Lambda function was created in Python and added to the bot. The code validated the user's input and executed the logic for asset allocation recommendations.  This step also included testing the function and integating with the bot. 
   
   ![lambda](Images/lambda.png)
   
-  ### Robo Advisor in Action! 
+  ## Robo Advisor in Action! 
+
 
 ![Video](Images/Media1.gif)
