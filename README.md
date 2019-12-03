@@ -1,6 +1,6 @@
 # Robo Advisor for Retirement Plans
 
-In this homework assignment, a Robo Advisor was created using Amazon Web Services (AWS) and `Python`, to recommend an asset allocation for a retirement plan. The Robo Advisor was published and deployed on Slack as an app for users to access. 
+In this assignment, a Robo Advisor was created using Amazon Web Services (AWS) and `Python`, to recommend an asset allocation for a retirement plan. The Robo Advisor was published and deployed on Slack as an app for users to access. 
 
 
 1. [Initial Robo Advisor Configuration](Initial-Robo-Advisor-Configuration)
