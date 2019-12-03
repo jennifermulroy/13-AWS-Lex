@@ -25,7 +25,7 @@ In this assignment, a Robo Advisor was created using Amazon Web Services (AWS) a
   
 ### Build and Test the Robo Advisor
 
-The Robo Advisor was built and tested in AWS to ensure it is responding accurately with the user. 
+The Robo Advisor was built and tested in AWS to ensure accurate responses with the user. 
 
 ![Test Video](Images/test.gif)
 
